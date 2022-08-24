@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/drawable/btn_rd.xml" value="0.1885" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/drawable/btn_wh.xml" value="0.1905" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/drawable/ed_style.xml" value="0.1905" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/drawable/ic_back.xml" value="0.1" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/drawable/ic_foodie_logo.xml" value="0.1" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/drawable/indicator_default.xml" value="0.1905" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/drawable/indicator_selected.xml" value="0.1895" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/layout/activity_intro_screen.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/layout/activity_login_page.xml" value="0.2" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/layout/activity_otp_page.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/layout/activity_splash_screen.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/layout/categories.xml" value="0.18125" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/layout/fragment_cart.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/layout/fragment_profile.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/layout/fragment_search.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/layout/layout_screen.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/layout/offer_scroll.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/layout/popular_brand.xml" value="0.14957264957264957" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/layout/recommandation.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/layout/top_picks.xml" value="0.5214384508990318" />
+        <entry key="..\:/Users/at705/AndroidStudioProjects/Foodie/app/src/main/res/menu/bottom_menu.xml" value="0.18229166666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

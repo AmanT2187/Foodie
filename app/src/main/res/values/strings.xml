@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Foodie</string>
+    <string name="foodtag">Order food online \n and get it delivered to your doorstep</string>
+    <string name="policy">By continuing you agree to our \n<a href="https://www.google.com/">Terms of Service</a> &amp; <a href="https://www.google.com/">Privacy Policy.</a></string>
+    <string name="tag1">Find your favourite food and restaurant \n near you and add to cart</string>
+    <string name="tag2">Order your food online from wide range of \n restaurants listed on <b>foodie</b></string>
+    <string name="tag3">Get the freshly prepared food delivered at \n your place on time</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="foodtag">Order food online \n and get it delivered to your doorstep</string>
+    <string name="policy">By continuing you agree to our \n<a href="terms:" >Terms of Service</a> &amp; <a href="privacy:">Privacy Policy.</a></string>
+
+</resources>
