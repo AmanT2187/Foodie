@@ -12,6 +12,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -27,6 +28,7 @@ import android.widget.Toast;
 
 import com.amati.foodie.R;
 import com.amati.foodie.adapter.ImageAdapter;
+import com.amati.foodie.adapter.recomAdapter;
 import com.amati.foodie.location.AppLocationService;
 import com.amati.foodie.location.LocationAddress;
 import com.amati.foodie.models.ImageModel;
@@ -44,12 +46,13 @@ public class HomeFragment extends Fragment {
 
     TextView tvAddress;
     AppLocationService appLocationService;
-    RecyclerView recyclerView;
+    RecyclerView recyclerView, recommendRecycler, popularRecycler;
     DatabaseReference databaseReference;
     private Context mContext;
     private Activity mActivity;
     private ArrayList<ImageModel> imagesList;
     private ImageAdapter imageAdapter = null;
+    private recomAdapter recomAdapter = null;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -62,6 +65,8 @@ public class HomeFragment extends Fragment {
         mContext = getContext();
         FirebaseApp.initializeApp(getContext().getApplicationContext());
         recyclerView = view.findViewById(R.id.layoutTop);
+        recommendRecycler =view.findViewById(R.id.recommand);
+        popularRecycler =view.findViewById(R.id.popular);
 
         tvAddress =  view.findViewById(R.id.txtLocation);
         appLocationService = new AppLocationService(
@@ -100,9 +105,16 @@ public class HomeFragment extends Fragment {
 
         //TopImages Fetch
         recyclerView.setHasFixedSize(true);
+        recommendRecycler.setHasFixedSize(true);
+        popularRecycler.setHasFixedSize(true);
 //        recyclerView.setLayoutManager(new GridLayoutManager(mActivity, 2, GridLayoutManager.VERTICAL, false));
-        recyclerView.setLayoutManager(new LinearLayoutManager(mContext, LinearLayoutManager.HORIZONTAL, true));
+        recyclerView.setLayoutManager(new LinearLayoutManager(mContext, LinearLayoutManager.HORIZONTAL, false));
         recyclerView.setNestedScrollingEnabled(false);
+        recommendRecycler.setLayoutManager(new GridLayoutManager(mContext,2, GridLayoutManager.HORIZONTAL, false));
+//        recommendRecycler.setLayoutManager(new LinearLayoutManager(mContext, LinearLayoutManager.HORIZONTAL, false));
+        recommendRecycler.setNestedScrollingEnabled(false);
+        popularRecycler.setLayoutManager(new GridLayoutManager(mContext,2, RecyclerView.HORIZONTAL, false));
+        popularRecycler.setNestedScrollingEnabled(false);
         imagesList = new ArrayList<>();
 
         databaseReference = FirebaseDatabase.getInstance().getReference("TP_Images");
@@ -115,8 +127,12 @@ public class HomeFragment extends Fragment {
                     imagesList.add(imagemodel);
                 }
                 imageAdapter = new ImageAdapter(mContext,mActivity, (ArrayList<ImageModel>) imagesList);
+                recomAdapter = new recomAdapter(mContext,mActivity, (ArrayList<ImageModel>) imagesList);
                 recyclerView.setAdapter(imageAdapter);
+                recommendRecycler.setAdapter(recomAdapter);
+                popularRecycler.setAdapter(imageAdapter);
                 imageAdapter.notifyDataSetChanged();
+                recomAdapter.notifyDataSetChanged();
             }
 
             @Override

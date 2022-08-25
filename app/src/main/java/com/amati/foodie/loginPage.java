@@ -12,6 +12,7 @@ import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,6 +20,7 @@ public class loginPage extends AppCompatActivity {
     TextView txtPolicy;
     Button btnLogin;
     EditText edtPhone;
+    ImageView imageVi;
 
     private final int REQUEST_LOCATION_PERMISSION = 1;
 
@@ -33,8 +35,19 @@ public class loginPage extends AppCompatActivity {
 
         edtPhone = findViewById(R.id.et_phone);
         String ph = edtPhone.getText().toString();
-
+        imageVi = findViewById(R.id.loginlogo2);
         btnLogin = findViewById(R.id.btnLogin);
+
+
+        imageVi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(loginPage.this, MainActivity.class);
+                i.putExtra("phone", edtPhone.getText().toString());
+                startActivity(i);
+            }
+        });
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
